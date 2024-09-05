@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Front-end 19</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<!--implicit association-->
+    <ol>
+        <li><label><input type="radio" name="tuoi" value="duoi24" checked> dưới 24</label></li>
+        <li><label><input type="radio" name="tuoi" value="25-34"> 25 tới 34</label></li>
+        <li><label><input type="radio" name="tuoi" value="35-44"> 35 tới 44</label></li>
+        <li><label><input type="radio" name="tuoi" value="tren45"> 45+</label></li>
+    </ol>  
+<!--explicit association-->
+    <label for="form-ho-ten">Họ tên: </label>
+    <input type="text" name="ho-ten" id="form-ho-ten"><br>
+    <label for="form-email">Email: </label>
+    <input type="text" name="email" id="form-email">
+<!--Fieldset để nhóm control liên quan đến nhau và legend chú thích cho nhóm các control này-->
+    <fieldset>
+        <legend>Bạn bao nhiêu tuổi?</legend>
+        <ol>
+
+            <li><label><input type="radio" name="tuoi" value="duoi24" checked> dưới 24</label></li>
+            <li><label><input type="radio" name="tuoi" value="25-34"> 25 tới 34</label></li>
+            <li><label><input type="radio" name="tuoi" value="35-44"> 35 tới 44</label></li>
+            <li><label><input type="radio" name="tuoi" value="tren45"> 45+</label></li>
+        </ol>        
+    </fieldset>
+</body>
+</html>
