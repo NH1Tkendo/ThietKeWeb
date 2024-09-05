@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Front-end 15</title>
+</head>
+<body>
+    <img src="images/200px.png" alt="Black myth: wukong"
+        srcset="images/200px.png 480w,
+                images/400px.png 980w,
+                images/600px.png 1280w"
+        sizes="(max-width: 480 px) 100vw,
+                (max-width: 1000 px) 50vw",
+                240px>
+
+    <picture>
+        <source media="(min-width: 1024px)" srcset="images/600px.png">
+        <source media="(min-width: 760px)" srcset="images/400px.png">
+        <img src="images/200px.png" alt="Black myth: wukong">  
+    </picture>
+    <div>
+        <p>Bạn có thể xem giá trị device-pixel-ratio của một số thiết bị bằng đoạn mã JS sau</p>
+        <code>
+            console.log(window.devicePixelRatio)
+        </code>
+        <p>Chúng ta có thể sử dụng lệnh của JavaScript để xem kích thước hiện tại của cửa sổ trình duyệt. Mở cửa sổ Developer tools, chọn tab Console, nhập vào lệnh sau:</p>
+        <code>
+            console.log(Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0))
+        </code>
+    </div>
+</body>
+</html>
